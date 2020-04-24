@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 
 import Bubbles from "./Bubbles";
@@ -22,7 +21,7 @@ const BubblePage = () => {
           "sorry, an error has occured while retrieving the color page"
         )
       );
-  }, [colorList]);
+  }, []);
 
   return (
     <>
